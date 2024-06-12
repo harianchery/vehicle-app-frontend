@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import axios from 'axios'
+import Navbar from './Navbar'
 
 const View = () => {
     const [vehicle, changeVehicle] = useState([])
@@ -15,7 +16,7 @@ const View = () => {
         
     return (
         <div>
-           
+           <Navbar/>
             <div className="container">
                 <div className="row">
                 <h3 align="center"><b>Vehicle Details</b></h3>
